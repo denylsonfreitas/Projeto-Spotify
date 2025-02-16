@@ -1,7 +1,7 @@
 import React from "react";
 import ItemList from "./ItemList";
 import { artistArray } from "../assets/database/artists";
-import { songArray } from "../assets/database/songs";
+import { songsArray } from "../assets/database/songs";
 
 const Main = ({ type }) => {
   return (
@@ -17,12 +17,11 @@ const Main = ({ type }) => {
       ) : (
         <></>
       )}
-
       {type === "songs" || type === undefined ? (
         <ItemList
           title="Músicas"
           items={20}
-          itemsArray={songArray}
+          itemsArray={songsArray}
           path="/songs"
           idPath="/song"
         />

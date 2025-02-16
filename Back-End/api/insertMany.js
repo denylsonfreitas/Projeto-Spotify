@@ -9,7 +9,7 @@ const newArtistArray = artistArray.map((currentArtistsObj) => {
   return newArtistsObj;
 });
 
-const newSongsArray = songArray.map((currentSongsObj) => {
+const newSongArray = songArray.map((currentSongsObj) => {
   const newSongsObj = { ...currentSongsObj };
   delete newSongsObj.id;
 
@@ -17,7 +17,7 @@ const newSongsArray = songArray.map((currentSongsObj) => {
 });
 
 const respArtists = await db.collection("artists").insertMany(newArtistArray);
-const respSongs = await db.collection("songs").insertMany(newSongsArray);
+const respSongs = await db.collection("songs").insertMany(newSongArray);
 
 console.log(respArtists);
 console.log(respSongs);
