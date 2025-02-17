@@ -3,7 +3,7 @@ import "dotenv/config";
 
 const { NODE_ENV } = process.env.NODE_ENV;
 
-const URL = NODE_ENV === "development" ? "http://localhost:3001/api" : "/api";
+const URL = "https://projeto-spotify-90op.onrender.com/api";
 
 const respArtists = await axios.get(`${URL}/artists`);
 const respSongs = await axios.get(`${URL}/songs`);
