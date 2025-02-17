@@ -1,0 +1,21 @@
+{
+  "name": "projeto-spotify",
+  "version": "1.0.0",
+  "description": "- Projeto desenvolvido durante a Jornada Full-Stack da Hashtag Programação",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix ./Front-End && npm install --prefix ./Front-End && npm run build --prefix ./Front-End",
+    "start": "npm run start --prefix ./Back-End"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denylsonfreitas/Projeto-Spotify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denylsonfreitas/Projeto-Spotify/issues"
+  },
+  "homepage": "https://github.com/denylsonfreitas/Projeto-Spotify#readme"
+}
